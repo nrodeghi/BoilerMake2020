@@ -2,6 +2,7 @@ import sys
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from uiCode import Ui_MainWindow
+from uiFootprint import Ui_mainWindow2
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
@@ -29,13 +30,42 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.cbOthers.addItem("No")
         self.cbOthers.setCurrentIndex(-1)
 
+        self.btnSubmit.clicked.connect(lambda: Controller.Show_CalcWindow(self))
+        self.btnSubmit.clicked.connect(lambda: self.hide())
+
+
+
+class CalculatorWindow(QtWidgets.QMainWindow, Ui_mainWindow2):
+
+    def __init__(self, parent=None):
+        super(CalculatorWindow, self).__init__(parent=parent)
+        self.ui = Ui_mainWindow2()
+        self.setupUi(self)
+        self.show()
+        self.showMaximized()
+
+
+
+class Controller():
+
+    def __init__(self):
+        pass
+
+    def Show_MainWindow(self):
+        self.MainWindow = MainWindow()
+
+
+    def Show_CalcWindow(self):
+        self.CalculatorWindow = CalculatorWindow()
+
 
 
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    myApp = MainWindow()
-    myApp.show()
+    controller = Controller()
+    controller.Show_MainWindow()
     sys.exit(app.exec_())
+
 
     # pyuic5 -x <.ui file> -o <output.py file>
