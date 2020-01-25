@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>872</width>
-    <height>634</height>
+    <width>738</width>
+    <height>624</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,21 +30,303 @@
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QComboBox" name="cbAge">
-      <property name="enabled">
-       <bool>true</bool>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="1" column="1">
+     <widget class="QLabel" name="lbTitle">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Answer the questions below!</string>
       </property>
      </widget>
     </item>
-    <item>
+    <item row="2" column="0">
      <widget class="QLabel" name="lbAge">
       <property name="text">
        <string>Age Range</string>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="cbAge">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lbEdu">
+      <property name="text">
+       <string>Education Status</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="cbEdu"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="lbTravel1">
+      <property name="text">
+       <string>How do you travel to work/university?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QCheckBox" name="chWalk">
+      <property name="text">
+       <string>Walk/cycle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="lbTravel2">
+      <property name="text">
+       <string>(choose all that apply)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QCheckBox" name="chCar">
+      <property name="text">
+       <string>Car/motorbike</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QCheckBox" name="chBus">
+      <property name="text">
+       <string>Bus/Train</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QCheckBox" name="chNone">
+      <property name="text">
+       <string>I don't travel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="lbTime1">
+      <property name="text">
+       <string>On average, how long does it take you</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QComboBox" name="cbTime"/>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="lbTime2">
+      <property name="text">
+       <string>to travel to university?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0">
+     <widget class="QLabel" name="lbEng1">
+      <property name="text">
+       <string>How engaged do you feel with the</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="1">
+     <widget class="QSlider" name="slEng">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="0">
+     <widget class="QLabel" name="lbEng2">
+      <property name="text">
+       <string>issue of climate change?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="1">
+     <widget class="QLabel" name="lbEng3">
+      <property name="text">
+       <string>1 - Not very engaged to 5 - Very engaged</string>
+      </property>
+     </widget>
+    </item>
+    <item row="25" column="0">
+     <widget class="QLabel" name="lbKnow1">
+      <property name="text">
+       <string>Do you know what your carbon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="25" column="1">
+     <widget class="QSlider" name="slKnow">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="27" column="0">
+     <widget class="QLabel" name="lbKnow2">
+      <property name="text">
+       <string>footprint is?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="27" column="1">
+     <widget class="QLabel" name="lbKnow3">
+      <property name="text">
+       <string>1 - Not very aware to 5 - Very aware</string>
+      </property>
+     </widget>
+    </item>
+    <item row="31" column="0">
+     <widget class="QLabel" name="lbPrint1">
+      <property name="text">
+       <string>How would you rate your carbon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="32" column="0">
+     <widget class="QLabel" name="lbPrint2">
+      <property name="text">
+       <string>footprint?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="31" column="1">
+     <widget class="QSlider" name="slPrint">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="32" column="1">
+     <widget class="QLabel" name="lbPrint3">
+      <property name="text">
+       <string>1 - Very bad to 5 - Very good</string>
+      </property>
+     </widget>
+    </item>
+    <item row="34" column="0">
+     <widget class="QLabel" name="lbTry1">
+      <property name="text">
+       <string>How have you tried to reduce your</string>
+      </property>
+     </widget>
+    </item>
+    <item row="35" column="0">
+     <widget class="QLabel" name="lbTry2">
+      <property name="text">
+       <string>carbon footprint?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="36" column="0">
+     <widget class="QLabel" name="lbTry3">
+      <property name="text">
+       <string>(choose 1-3 options)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="34" column="1">
+     <widget class="QCheckBox" name="chTry1">
+      <property name="text">
+       <string>I have changed how I travel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="35" column="1">
+     <widget class="QCheckBox" name="chTry2">
+      <property name="text">
+       <string>I have changed what I eat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="36" column="1">
+     <widget class="QCheckBox" name="chTry3">
+      <property name="text">
+       <string>I have changed my devices or appliances in my house</string>
+      </property>
+     </widget>
+    </item>
+    <item row="37" column="1">
+     <widget class="QCheckBox" name="chTry4">
+      <property name="text">
+       <string>I have changed my gas or electricity supplier</string>
+      </property>
+     </widget>
+    </item>
+    <item row="38" column="1">
+     <widget class="QCheckBox" name="chTry5">
+      <property name="text">
+       <string>I have not tried to reduce my carbon footprint</string>
+      </property>
+     </widget>
+    </item>
+    <item row="39" column="1">
+     <widget class="QComboBox" name="cbOthers"/>
+    </item>
+    <item row="39" column="0">
+     <widget class="QLabel" name="lbOthers1">
+      <property name="text">
+       <string>Have you tried to encourage others</string>
+      </property>
+     </widget>
+    </item>
+    <item row="40" column="0">
+     <widget class="QLabel" name="lbOthers2">
+      <property name="text">
+       <string>to reduce their carbon footprint?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="41" column="0">
+     <widget class="QPushButton" name="btnSubmit">
+      <property name="text">
+       <string>Submit</string>
       </property>
      </widget>
     </item>
@@ -55,7 +337,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>872</width>
+     <width>738</width>
      <height>20</height>
     </rect>
    </property>
