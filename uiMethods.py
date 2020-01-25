@@ -3,6 +3,7 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 from uiCode import Ui_MainWindow
 from uiFootprint import Ui_mainWindow2
+from uiTips import Ui_MainWindow3
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
@@ -44,6 +45,39 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_mainWindow2):
         self.show()
         self.showMaximized()
 
+        self.btnCalc.clicked.connect(lambda: self.carbonFootprint(self.leDrive.text(), self.lePlane.text(),
+                                                                  self.leBeef.text(), self.leShop.text()))
+
+        self.btnNext.clicked.connect(lambda: Controller.Show_Tips(self))
+        self.btnNext.clicked.connect(lambda: self.hide())
+
+
+
+    def carbonFootprint(self, milesDrove, flightHours, beefConsumed, shoppingTrips):
+        # driving is the main way people travel in the US short-term
+        # flying is the most common way people travel long distance
+        # consumption of the beef has a higher carbon footprint than any other food
+        # shopping in person produces a significant amount of CO2
+        c1 = float(milesDrove) * 14.25 * 52
+        c2 = float(flightHours) * 8818.49
+        c3 = float(beefConsumed) * 26.44 * 4 * 52
+        c4 = float(shoppingTrips) * 144 * 52
+        c_total = c1 + c2 + c3 + c4
+        c_total = c_total / 32000
+        c_total = (c_total * 12) + 3.7
+
+        self.leFoot.setText("You contribute %.2f tons of CO2 per year" % c_total)
+
+
+class TipsWindow(QtWidgets.QMainWindow, Ui_MainWindow3):
+    def __init__(self, parent=None):
+        super(TipsWindow, self).__init__(parent=parent)
+        self.ui = Ui_MainWindow3()
+        self.setupUi(self)
+        self.show()
+        self.showMaximized()
+
+        
 
 
 class Controller():
@@ -54,10 +88,11 @@ class Controller():
     def Show_MainWindow(self):
         self.MainWindow = MainWindow()
 
-
     def Show_CalcWindow(self):
         self.CalculatorWindow = CalculatorWindow()
 
+    def Show_Tips(self):
+        self.TipsWindow = TipsWindow()
 
 
 
