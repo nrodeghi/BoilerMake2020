@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>732</width>
-    <height>539</height>
+    <width>872</width>
+    <height>634</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Carbon Footprint Predictor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>tree.jpg</normaloff>tree.jpg</iconset>
   </property>
   <property name="accessibleName">
    <string/>
@@ -20,26 +24,38 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QComboBox" name="comboBox">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>151</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QComboBox" name="cbAge">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbAge">
+      <property name="text">
+       <string>Age Range</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>732</width>
+     <width>872</width>
      <height>20</height>
     </rect>
    </property>

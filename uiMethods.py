@@ -9,6 +9,7 @@ class MyForm(QtWidgets.QMainWindow):
         super(MyForm, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.showMaximized()
 
 
 if __name__ == '__main__':
@@ -16,3 +17,5 @@ if __name__ == '__main__':
     myapp = MyForm()
     myapp.show()
     sys.exit(app.exec_())
+
+    # pyuic5 -x <.ui file> -o <output.py file>
