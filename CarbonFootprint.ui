@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Carbon Footprint Calculator</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>tree.jpg</normaloff>tree.jpg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="7" column="1">

@@ -31,319 +31,7 @@
     <enum>Qt::LeftToRight</enum>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="1">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="1" column="3">
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="47" column="1">
-     <widget class="QLabel" name="lbOthers2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>to reduce their carbon footprint?</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QComboBox" name="cbAge">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="1">
-     <widget class="QLabel" name="lbTravel2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>(choose all that apply)</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLabel" name="lbEdu">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Education Status</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QComboBox" name="cbEdu">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1" colspan="2">
-     <widget class="QLabel" name="lbTitle">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#55aa00;&quot;&gt;College Student Carbon Footprint Predictor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-    </item>
-    <item row="27" column="1">
-     <widget class="QLabel" name="lbTime1">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>On average, how long does it take you</string>
-      </property>
-     </widget>
-    </item>
-    <item row="30" column="2">
-     <widget class="QSlider" name="slEng">
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>5</number>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="tickPosition">
-       <enum>QSlider::TicksBelow</enum>
-      </property>
-      <property name="tickInterval">
-       <number>1</number>
-      </property>
-     </widget>
-    </item>
-    <item row="37" column="2">
-     <widget class="QLabel" name="lbPrint3">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>1 - Very bad to 5 - Very good</string>
-      </property>
-     </widget>
-    </item>
-    <item row="36" column="1">
-     <widget class="QLabel" name="lbPrint1">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>How would you rate your carbon</string>
-      </property>
-     </widget>
-    </item>
     <item row="39" column="1">
-     <widget class="QLabel" name="lbTry1">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>How have you tried to reduce your</string>
-      </property>
-     </widget>
-    </item>
-    <item row="39" column="2">
-     <widget class="QCheckBox" name="chTry1">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>I have changed how I travel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="34" column="1">
-     <widget class="QLabel" name="lbKnow2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>footprint is?</string>
-      </property>
-     </widget>
-    </item>
-    <item row="37" column="1">
-     <widget class="QLabel" name="lbPrint2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>footprint?</string>
-      </property>
-     </widget>
-    </item>
-    <item row="34" column="2">
-     <widget class="QLabel" name="lbKnow3">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>1 - Not very aware to 5 - Very aware</string>
-      </property>
-     </widget>
-    </item>
-    <item row="40" column="1">
-     <widget class="QLabel" name="lbTry2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>carbon footprint?</string>
-      </property>
-     </widget>
-    </item>
-    <item row="27" column="2">
-     <widget class="QComboBox" name="cbTime">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-     </widget>
-    </item>
-    <item row="30" column="1">
-     <widget class="QLabel" name="lbEng1">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>How engaged do you feel with the</string>
-      </property>
-     </widget>
-    </item>
-    <item row="40" column="2">
-     <widget class="QCheckBox" name="chTry2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>I have changed what I eat</string>
-      </property>
-     </widget>
-    </item>
-    <item row="31" column="1">
-     <widget class="QLabel" name="lbEng2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>issue of climate change?</string>
-      </property>
-     </widget>
-    </item>
-    <item row="31" column="2">
-     <widget class="QLabel" name="lbEng3">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>1 - Not very engaged to 5 - Very engaged</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="1">
-     <widget class="QLabel" name="lbTravel1">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>How do you travel to work/university?    </string>
-      </property>
-     </widget>
-    </item>
-    <item row="33" column="1">
      <widget class="QLabel" name="lbKnow1">
       <property name="font">
        <font>
@@ -356,20 +44,7 @@
       </property>
      </widget>
     </item>
-    <item row="28" column="1">
-     <widget class="QLabel" name="lbTime2">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>to travel to university?</string>
-      </property>
-     </widget>
-    </item>
-    <item row="33" column="2">
+    <item row="39" column="2">
      <widget class="QSlider" name="slKnow">
       <property name="minimum">
        <number>1</number>
@@ -388,7 +63,20 @@
       </property>
      </widget>
     </item>
-    <item row="36" column="2">
+    <item row="32" column="1">
+     <widget class="QLabel" name="lbTime2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>to travel to university?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="42" column="2">
      <widget class="QSlider" name="slPrint">
       <property name="minimum">
        <number>1</number>
@@ -407,7 +95,7 @@
       </property>
      </widget>
     </item>
-    <item row="41" column="1">
+    <item row="47" column="1">
      <widget class="QLabel" name="lbTry3">
       <property name="font">
        <font>
@@ -420,8 +108,8 @@
       </property>
      </widget>
     </item>
-    <item row="46" column="1">
-     <widget class="QLabel" name="lbOthers1">
+    <item row="11" column="1">
+     <widget class="QLabel" name="lbTravel1">
       <property name="font">
        <font>
         <family>Bahnschrift</family>
@@ -429,138 +117,37 @@
        </font>
       </property>
       <property name="text">
-       <string>Have you tried to encourage others</string>
+       <string>How do you travel to work/university?    </string>
       </property>
      </widget>
-    </item>
-    <item row="42" column="2">
-     <widget class="QCheckBox" name="chTry4">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>I have changed my gas or electricity supplier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="2">
-     <widget class="QCheckBox" name="chBus">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Bus/Train</string>
-      </property>
-     </widget>
-    </item>
-    <item row="43" column="2">
-     <widget class="QCheckBox" name="chTry5">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>I have not tried to reduce my carbon footprint</string>
-      </property>
-     </widget>
-    </item>
-    <item row="41" column="2">
-     <widget class="QCheckBox" name="chTry3">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>I have changed my devices or appliances in my house</string>
-      </property>
-     </widget>
-    </item>
-    <item row="46" column="2">
-     <widget class="QComboBox" name="cbOthers">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="26" column="1">
-     <spacer name="verticalSpacer_3">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="32" column="1">
-     <spacer name="verticalSpacer_5">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="4" column="1">
-     <spacer name="verticalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="29" column="1">
-     <spacer name="verticalSpacer_4">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
     </item>
     <item row="35" column="1">
+     <widget class="QLabel" name="lbEng2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>issue of climate change?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="35" column="2">
+     <widget class="QLabel" name="lbEng3">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>1 - Not very engaged to 5 - Very engaged</string>
+      </property>
+     </widget>
+    </item>
+    <item row="41" column="1">
      <spacer name="verticalSpacer_6">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -573,7 +160,20 @@
       </property>
      </spacer>
     </item>
-    <item row="38" column="1">
+    <item row="33" column="1">
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="44" column="1">
      <spacer name="verticalSpacer_7">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -586,7 +186,7 @@
       </property>
      </spacer>
     </item>
-    <item row="44" column="2">
+    <item row="50" column="2">
      <spacer name="verticalSpacer_8">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -599,7 +199,7 @@
       </property>
      </spacer>
     </item>
-    <item row="48" column="1">
+    <item row="54" column="1">
      <spacer name="verticalSpacer_9">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -612,7 +212,33 @@
       </property>
      </spacer>
     </item>
-    <item row="1" column="1">
+    <item row="6" column="1">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="38" column="1">
+     <spacer name="verticalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="1">
      <widget class="QLabel" name="lbAge">
       <property name="font">
        <font>
@@ -628,7 +254,7 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
+    <item row="6" column="2">
      <spacer name="verticalSpacer_10">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -641,20 +267,7 @@
       </property>
      </spacer>
     </item>
-    <item row="8" column="2">
-     <widget class="QCheckBox" name="chCar">
-      <property name="font">
-       <font>
-        <family>Bahnschrift</family>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Car/motorbike</string>
-      </property>
-     </widget>
-    </item>
-    <item row="11" column="2">
+    <item row="14" column="2">
      <widget class="QCheckBox" name="chWalk">
       <property name="font">
        <font>
@@ -667,7 +280,7 @@
       </property>
      </widget>
     </item>
-    <item row="12" column="2">
+    <item row="15" column="2">
      <widget class="QCheckBox" name="chNone">
       <property name="font">
        <font>
@@ -680,7 +293,251 @@
       </property>
      </widget>
     </item>
-    <item row="50" column="1">
+    <item row="11" column="2">
+     <widget class="QCheckBox" name="chCar">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Car/motorbike</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLabel" name="lbWork">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Work Status</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QComboBox" name="cbWork">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <spacer name="verticalSpacer_12">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="31" column="2">
+     <widget class="QComboBox" name="cbTime">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="34" column="1">
+     <widget class="QLabel" name="lbEng1">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>How engaged do you feel with the</string>
+      </property>
+     </widget>
+    </item>
+    <item row="46" column="2">
+     <widget class="QCheckBox" name="chTry2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>I have changed what I eat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="46" column="1">
+     <widget class="QLabel" name="lbTry2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>carbon footprint?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="40" column="2">
+     <widget class="QLabel" name="lbKnow3">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>1 - Not very aware to 5 - Very aware</string>
+      </property>
+     </widget>
+    </item>
+    <item row="43" column="1">
+     <widget class="QLabel" name="lbPrint2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>footprint?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="40" column="1">
+     <widget class="QLabel" name="lbKnow2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>footprint is?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLabel" name="lbTitle">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#55aa00;&quot;&gt;College Student Carbon Footprint Predictor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="31" column="1">
+     <widget class="QLabel" name="lbTime1">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>On average, how long does it take you</string>
+      </property>
+     </widget>
+    </item>
+    <item row="34" column="2">
+     <widget class="QSlider" name="slEng">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="43" column="2">
+     <widget class="QLabel" name="lbPrint3">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>1 - Very bad to 5 - Very good</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QLabel" name="lbTravel2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>(choose all that apply)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="lbEdu">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Education Status</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QComboBox" name="cbEdu">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="56" column="1">
      <widget class="QPushButton" name="btnSubmit">
       <property name="font">
        <font>
@@ -692,6 +549,234 @@
        <string>Submit</string>
       </property>
      </widget>
+    </item>
+    <item row="37" column="1">
+     <widget class="QLabel" name="lbYou">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Do you know what a carbon footprint is?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="53" column="1">
+     <widget class="QLabel" name="lbOthers2">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>to reduce their carbon footprint?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="2">
+     <widget class="QComboBox" name="cbAge">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="45" column="2">
+     <widget class="QCheckBox" name="chTry1">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>I have changed how I travel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="45" column="1">
+     <widget class="QLabel" name="lbTry1">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>How have you tried to reduce your</string>
+      </property>
+     </widget>
+    </item>
+    <item row="42" column="1">
+     <widget class="QLabel" name="lbPrint1">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>How would you rate your carbon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="47" column="2">
+     <widget class="QCheckBox" name="chTry3">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>I have changed my devices or appliances in my house</string>
+      </property>
+     </widget>
+    </item>
+    <item row="52" column="1">
+     <widget class="QLabel" name="lbOthers1">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Have you tried to encourage others</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="2">
+     <widget class="QCheckBox" name="chBus">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bus/Train</string>
+      </property>
+     </widget>
+    </item>
+    <item row="48" column="2">
+     <widget class="QCheckBox" name="chTry4">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>I have changed my gas or electricity supplier</string>
+      </property>
+     </widget>
+    </item>
+    <item row="49" column="2">
+     <widget class="QCheckBox" name="chTry5">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>I have not tried to reduce my carbon footprint</string>
+      </property>
+     </widget>
+    </item>
+    <item row="52" column="2">
+     <widget class="QComboBox" name="cbOthers">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="30" column="1">
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <spacer name="verticalSpacer_11">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="37" column="2">
+     <widget class="QComboBox" name="cbYou">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="36" column="1">
+     <spacer name="verticalSpacer_13">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>

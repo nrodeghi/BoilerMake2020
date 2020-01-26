@@ -10,7 +10,10 @@ from keras.models import load_model
 # This file has functions to process input from UI and return predictions using models.
 
 def process_from_form(input_array):
-    input_data = np.array()
+
+    print(input_array)
+    print('calls')
+    input_data = []
 
     #age range
     if input_array[0] is '18-22':
@@ -20,11 +23,15 @@ def process_from_form(input_array):
     else:
         input_data.append(3)
 
+    print('append')
+
     #education level
     if input_array[1] is 'In full-time education':
         input_data.append(0)
     else:
         input_data.append(1)
+
+    print('after ed')
 
     # work status
     if input_array[2] is 'Full-time':
@@ -33,6 +40,8 @@ def process_from_form(input_array):
         input_data.append(0)
     else:
         input_data.append(1)
+
+    print('after work')
 
     #transportation
     if input_array[6] is True:
@@ -52,6 +61,8 @@ def process_from_form(input_array):
     else:
         input_data.append(2)
 
+    print('after transport')
+
     #travel time
     if input_array[7] is 'I don\'t travel':
         input_data.append(-1)
@@ -64,14 +75,18 @@ def process_from_form(input_array):
     else:
         input_data.append(3)
 
+    print('travel')
+
     #engaged
     if input_array[8] > 3:
         input_data.append(1)
     else:
         input_data.append(0)
 
+    print('eng')
+
     # awareness of what carbon footprint is
-    if input_array[9] > 3:
+    if input_array[9] is 'No':
         input_data.append(1)
     else:
         input_data.append(0)
@@ -89,39 +104,55 @@ def process_from_form(input_array):
         input_data.append(0)
 
     #lifestyle changes
-    if input_array[17] is 1:
+    if input_array[16] is 1:
         input_data.append(0)
-    elif input_array[12] is True and input_array[13] is False and input_array[14] is False and input_array[15] is False and input_array[16] is False:
+    elif input_array[12] is True and input_array[13] is False and input_array[14] is False and input_array[15] is \
+            False and input_array[16] is False:
         input_data.append(1)
-    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is False and input_array[16] is False:
+    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is \
+            False and input_array[16] is False:
         input_data.append(2)
-    elif input_array[12] is False and input_array[13] is False and input_array[14] is True and input_array[15] is False and input_array[16] is False:
+    elif input_array[12] is False and input_array[13] is False and input_array[14] is True and input_array[15] is \
+            False and input_array[16] is False:
         input_data.append(3)
-    elif input_array[12] is False and input_array[13] is False and input_array[14] is False and input_array[15] is True and input_array[16] is False:
+    elif input_array[12] is False and input_array[13] is False and input_array[14] is False and input_array[15] is \
+            True and input_array[16] is False:
         input_data.append(4)
-    elif input_array[12] is False and input_array[13] is False and input_array[14] is False and input_array[15] is False and input_array[16] is True:
+    elif input_array[12] is False and input_array[13] is False and input_array[14] is False and input_array[15] is \
+            False and input_array[16] is True:
         input_data.append(5)
-    elif input_array[12] is True and input_array[13] is True and input_array[14] is False and input_array[15] is False and input_array[16] is False:
+    elif input_array[12] is True and input_array[13] is True and input_array[14] is False and input_array[15] is \
+            False and input_array[16] is False:
         input_data.append(3.5)
-    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is True and input_array[16] is False:
+    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is \
+            True and input_array[16] is False:
         input_data.append(6.5)
-    elif input_array[12] is False and input_array[13] is True and input_array[14] is True and input_array[15] is False and input_array[16] is False:
+    elif input_array[12] is False and input_array[13] is True and input_array[14] is True and input_array[15] is \
+            False and input_array[16] is False:
         input_data.append(5.5)
-    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is False and input_array[16] is True:
+    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is \
+            False and input_array[16] is True:
         input_data.append(7.5)
-    elif input_array[12] is True and input_array[13] is True and input_array[14] is True and input_array[15] is False and input_array[16] is False:
+    elif input_array[12] is True and input_array[13] is True and input_array[14] is True and input_array[15] is \
+            False and input_array[16] is False:
         input_data.append(6.5)
-    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is True and input_array[16] is True:
+    elif input_array[12] is False and input_array[13] is True and input_array[14] is False and input_array[15] is \
+            True and input_array[16] is True:
         input_data.append(11)
     else:
         input_data.append(4.5)
 
     #encourage
-    if input_array[18] is 'Yes':
+    if input_array[17] is 'Yes':
         input_data.append(0)
     else:
         input_data.append(1)
 
+    print('b4 array')
+    input_data = (np.asarray(input_data)).astype(float)
+    input_data = [input_data]
+    input_data = np.asarray(input_data).astype(float)
+    print(input_data)
     p1 = predict_model_output(input_data, 'Info_Utility.h5')
     p2 = predict_model_output(input_data, 'Habit_Change.h5')
     p3 = predict_model_output(input_data, 'Care_Sentiment.h5')
@@ -130,6 +161,9 @@ def process_from_form(input_array):
 
 
 def predict_model_output(input_data, modname):
+    print('called')
     model = load_model(modname)
+    print('afterload')
     predictions = model.predict_classes(input_data)
+    print('after predict')
     return predictions

@@ -14,6 +14,9 @@ class Ui_mainWindow2(object):
     def setupUi(self, mainWindow2):
         mainWindow2.setObjectName("mainWindow2")
         mainWindow2.resize(800, 600)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("tree.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        mainWindow2.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(mainWindow2)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)

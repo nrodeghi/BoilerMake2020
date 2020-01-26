@@ -1,6 +1,6 @@
 import plaidml.keras
 #from plaidml import keras
-from tensorflow import keras
+#from tensorflow import keras
 
 plaidml.keras.install_backend()
 #import os
@@ -8,16 +8,16 @@ import pandas as pd
 import numpy as np
 np.random.seed(1337) # for reproducibility
 #from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_curve, roc_auc_score
+#from sklearn.metrics import roc_curve, roc_auc_score
 import matplotlib.pyplot as plt
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
+#from sklearn.decomposition import PCA
+#from sklearn.preprocessing import StandardScaler
 #import tensorflow as tf
 from keras.models import load_model
 from keras.models import Sequential
 from keras.layers import Dense
 #from keras.utils.vis_utils import plot_model
-from sklearn.metrics import classification_report, confusion_matrix
+#from sklearn.metrics import classification_report, confusion_matrix
 
 # AI Powered Sentiment Predictive Tool for Sustainability Awareness and Advocacy
 
@@ -51,7 +51,7 @@ def main(filename):
 def predict_with_model(X_train, X_test, y_train, y_test, modname):
 
     model = Sequential()
-    model.add(Dense(30, input_dim=14, activation='relu'))
+    model.add(Dense(30, input_dim=11, activation='relu'))
     model.add(Dense(25, activation='relu'))
     model.add(Dense(10, activation='relu'))
     model.add(Dense(8, activation='relu'))
@@ -60,7 +60,7 @@ def predict_with_model(X_train, X_test, y_train, y_test, modname):
     model.add(Dense(8, activation='relu'))
     model.add(Dense(1, activation='sigmoid'))
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-    model.fit(X_test, y_test, epochs=35)
+    model.fit(X_test, y_test, epochs=40)
 
     _, accuracy = model.evaluate(X_test, y_test)
     print('Accuracy: %.2f' % (accuracy * 100))
@@ -213,7 +213,7 @@ def preprocess(filename):
     output = np.column_stack((a, b, c))
     #print(output)
 
-    array2 = np.delete(array2, [0, 10, 13, 16, 18], axis=1)
+    array2 = np.delete(array2, [0, 10, 11, 12, 13, 15, 16, 18], axis=1)
 
     ''''
     print('test')
